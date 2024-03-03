@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+    <form id="signupForm">
+        <label>Email</label>
+        <input type="text" id="email" name="email" placeholder="Example@email.com" onchange="validateEmail()" />
+        <span id="emailMessage" class="error"></span>
+        <br />
+        <br />
+        <label>Password</label>
+        <input type="password" id="password" name="password" placeholder="Your Password"
+            onchange=" validatePassword() " />
+        <span id="passwordMessage" class="error"></span>
+        <br />
+        <br />
+        <button type="submit" onclick="submitForm() ">Submit</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+
+</html>
